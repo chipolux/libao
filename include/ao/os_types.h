@@ -24,16 +24,16 @@
  *
  */
 
-/* Set type sizes for this platform (Requires Autoconf) */
-
 #ifndef __OS_TYPES_H__
 #define __OS_TYPES_H__
 
-typedef unsigned char     uint_8;
-typedef unsigned @SIZE16@ uint_16;
-typedef unsigned @SIZE32@ uint_32;
-typedef signed   char     sint_8;
-typedef signed   @SIZE16@ sint_16;
-typedef signed   @SIZE32@ sint_32;
+#include <stdint.h>
+
+typedef uint8_t  uint_8;
+typedef uint16_t uint_16;
+typedef uint32_t uint_32;
+typedef int8_t   sint_8;
+typedef int16_t  sint_16;
+typedef int32_t  sint_32;
 
 #endif /* __OS_TYPES_H__ */
